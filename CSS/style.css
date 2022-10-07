@@ -14,13 +14,23 @@
 }
 .debug{
     border: 1px solid aqua;
-    height: 50px;
+    /* height: 50px; */
 }
-
+body{
+    height: 100vh;
+    font-family: 'Staatliches', cursive;
+    background-color: #b31b1a;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+h1{
+    color: var(--gold);
+    padding: 50px 0;
+}
 .wrapper{
     width: 480px;
     max-width: 90%;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 .wrapper label{
     display: block;
@@ -29,8 +39,16 @@
 .wrapper label input{
     font-size: 19px;
     padding: 0.3em;
+    border: 2px solid var(--gold);
+    border-radius: 30px;
+    outline: 2px dotted var(--white);
+
 }
-/* .wrapper input[type="button"]{
+.wrapper input[type="button"]{
     font-size: 20px;
-    color: #b31b1a;
-} */
+    color: var(--red);
+    background-color: var(--white);
+    border: 3px solid var(--gold);
+    border-radius: 30px;
+    outline: 2px dotted var(--white);
+}
