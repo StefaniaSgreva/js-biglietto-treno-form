@@ -23,15 +23,18 @@ const CalcTicketPrice = function (){
 
     if ((age >= 18) && (age <= 65)){
         console.log(correctPriceAdult);
-        // const element = document.getElementById('ticket-price').innerHTML = correctPriceAdult;
+        const element = document.getElementById('ticket-price').innerHTML = correctPriceAdult;
     } else if (age < 18){
         console.log(correctPriceUnderage);
-        // const element = document.getElementById('ticket-price').innerHTML = correctPriceUnderage += '<div style="color: #b31b1a; font-size: 16px;">Hai ricevuto uno sconto del 20%</div>';
+        const element = document.getElementById('ticket-price').innerHTML = correctPriceUnderage += '<div style="color: #b31b1a; font-size: 12px;">You got a 20% discount !</div>';
     } else if (age > 65) {
         console.log(correctPriceOver);
-        // const element = document.getElementById('ticket-price').innerHTML = correctPriceOver += '<div style="color: #b31b1a; font-size: 16px;">Hai ricevuto uno sconto del 40%</div>';
+        const element = document.getElementById('ticket-price').innerHTML = correctPriceOver += '<div style="color: #b31b1a; font-size: 12px;">You got a 40% discount !</div>';
     }
 
 }
 
 btn.addEventListener('click', CalcTicketPrice);
+
+
+

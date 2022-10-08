@@ -15,22 +15,74 @@
     <title>Train Ticket Form</title>
 </head>
 <body>
-    <h1 class="text-center">Calculate the price of your ticket here:</h1>
-    <div class="wrapper">
+    <div class="fixed_height">
+        <h1 class="text-center">Calculate the price of your ticket here:</h1>
+        <!-- FORM  -->
+        <div class="wrapper">
         <form id="form">
-            <label class="d-flex justify-content-center">
-                <input type="number" value="0" id="km">
+            <label class="d-flex justify-content-center flex-column">
+                <div class="text-center mb-1">How many km you have to travel ?</div>
+                <input type="number" value="0" id="km" >
             </label>
-            <label class="d-flex justify-content-center">
+            <label class="d-flex justify-content-center flex-column">
+                <div class="text-center mb-1 mt-2">How old are you ?</div>
                 <input type="number" value="0" id="age">
             </label>
             <label class="d-flex justify-content-center mt-3">
-                <input type="button" value="Calculate" id="calculate">
+                <input type="button" value="Calculate" id="calculate" onclick="show()">
             </label>
         </form>
+        
+        </div>
+        <!-- TICKET  -->
+        <div id="ticket">
+            <div class="left d-flex">
+                <div class="image">
+                    <div class="admit_one">
+                        <span>ADMIT-ONE</span>
+                        <span>ADMIT-ONE</span>
+                        <span>ADMIT-ONE</span>
+                    </div>
+                    <div class="ticket-number">
+                        <span>#20030277</span>
+                    </div>
+                </div>
+                <div class="ticket_info mx-4 my-2 d-flex flex-column justify-content-between align-items-center text-center">
+                    <div class="date">
+                        <span>Thursday</span>
+                        <span class="october-06">Oct. 08</span>
+                        <span>2022</span>
+                    </div>
+                    <h2>Somwhere</h2>
+                    <h3>€ <span id="ticket-price" class="price"></span></h3>
+                    <div class="time">
+                        8:00 AM <span>to</span> 11:00 PM<br>
+                        BOARDING <span>@</span> 7:00 AM
+                    </div>
+                    <div class="location">A Magig Place, Somewhere</div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right_info_container d-flex flex-column justify-content-center align-items-center h-100">
+                    <div class="destination">
+                        <h2>Somewhere</h2>
+                    </div>
+                    <div class="time">
+                        <p>8:00 AM <span>to</span> 11:00 PM<br>
+                        BOARDING <span>@</span> 7:00 AM</p>
+                    </div>
+                    <div class="barcode">
+                        <img class="img-fluid" src="./img/qr-code.png" alt="QR code">
+                    </div>
+                    <div class="ticket-number">
+                        <span>#20030277</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     
-
     <script src="./JS/script.js"></script>
 </body>
 </html>
