@@ -15,10 +15,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.debug{
-    border: 1px solid aqua;
-    /* height: 50px; */
-}
 body{
     font-family: 'Staatliches', cursive;
     background-color: #b31b1a;
@@ -73,7 +69,7 @@ h1{
     height: 250px;
     margin: 10px auto;
     display: flex;
-    background-color: white;
+    background-color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
                 rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
